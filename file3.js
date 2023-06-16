@@ -32,7 +32,11 @@ form.addEventListener('submit', function(event) {
       result.token.name = document.getElementById('name').value;
       result.token.email = document.getElementById('email').value;
       result.token.address_line1 = document.getElementById('address').value;
+      result.token.address_city = document.getElementById('city').value;
+      result.token.address_state = document.getElementById('state').value;
       result.token.billing_address = document.getElementById('billing-address').value;
+      result.token.billing_city = document.getElementById('billing-city').value;
+      result.token.billing_state = document.getElementById('billing-state').value;
 
       // Send the token to your server
       stripeTokenHandler(result.token);
