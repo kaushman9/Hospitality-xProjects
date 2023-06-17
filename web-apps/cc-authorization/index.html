@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Payment Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Choice_Hotels_logo.svg" alt="Hotel Logo">
+    <h1 id="hotel-name">Comfort Inn - Shelbyville North</h1>
+    <h3 id="hotel-address">36 W Rampart Rd, Shelbyville, IN 46176</h3>
+  </header>
+  <form id="payment-form">
+    <h2>Personal Information</h2>
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="address" placeholder="Street Address" required>
+    <input type="text" id="city" placeholder="City" required>
+    <input type="text" id="state" placeholder="State" required>
+
+    <h2>Billing Information</h2>
+    <input type="text" id="billing-address" placeholder="Street Address" required>
+    <input type="text" id="billing-city" placeholder="City" required>
+    <input type="text" id="billing-state" placeholder="State" required>
+    <div id="card-element"><!--Stripe.js will put the card elements here--></div>
+    <div id="card-errors" role="alert"></div>
+    <button id="submit">Submit Payment</button>
+  </form>
+  <footer>
+    <p>Comfort Inn - Shelbyville North © 2023. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="script.js"></script>
+</body>
+</html>
