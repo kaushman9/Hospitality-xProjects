@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "rW3qX+QgZQOatOQWLBdmcGf0/PLpkwaAtq6MRqa2ChZLvFNwb4oJfxB7JMxZp9XS6tvBS+gcN3QsKqQmjMaV1g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\patel\\OneDrive\\Desktop\\Hospitality xProjects\\saasApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\patel\\.nuget\\packages\\npgsql\\4.1.3\\npgsql.4.1.3.nupkg.sha512",
+    "C:\\Users\\patel\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+    "C:\\Users\\patel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.18\\microsoft.netcore.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\patel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.18\\microsoft.windowsdesktop.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\patel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.18\\microsoft.aspnetcore.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\patel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.18\\microsoft.netcore.app.host.win-x64.6.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

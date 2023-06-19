@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login/Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Your SaaS Company</h1>
+    <div class="user-actions">
+    </div>
+  </header>
+  <main>
+    <section id="login-section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="login-email" required>
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="login-password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+    <section id="signup-section">
+      <h2>Sign Up</h2>
+      <form id="signup-form">
+        <label for="signup-firstname">First Name:</label>
+        <input type="text" id="signup-firstname" name="signup-firstname" required>
+        <label for="signup-lastname">Last Name:</label>
+        <input type="text" id="signup-lastname" name="signup-lastname" required>
+        <label for="signup-email">Email:</label>
+        <input type="email" id="signup-email" name="signup-email" required>
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" name="signup-password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+    <section id="forgot-password-section">
+      <h2>Forgot Password</h2>
+      <form id="forgot-password-form">
+        <label for="forgot-password-email">Email:</label>
+        <input type="email" id="forgot-password-email" name="forgot-password-email" required>
+        <button type="submit">Reset Password</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Your SaaS Company. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

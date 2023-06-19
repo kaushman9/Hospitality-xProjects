@@ -1,0 +1,5 @@
+C:\Users\patel\OneDrive\Desktop\Hospitality xProjects\obj\Debug\net6.0\saasApp.csproj.AssemblyReference.cache
+C:\Users\patel\OneDrive\Desktop\Hospitality xProjects\obj\Debug\net6.0\saasApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\patel\OneDrive\Desktop\Hospitality xProjects\obj\Debug\net6.0\saasApp.AssemblyInfoInputs.cache
+C:\Users\patel\OneDrive\Desktop\Hospitality xProjects\obj\Debug\net6.0\saasApp.AssemblyInfo.cs
+C:\Users\patel\OneDrive\Desktop\Hospitality xProjects\obj\Debug\net6.0\saasApp.csproj.CoreCompileInputs.cache
