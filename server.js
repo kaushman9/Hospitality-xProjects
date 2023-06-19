@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const path = require('path');
 const session = require('express-session');
@@ -18,6 +19,9 @@ app.use(
     saveUninitialized: false,
   })
 );
+
+// Enable CORS for all routes
+app.use(cors());
 
 // Database configuration
 const dbConfig = {
@@ -62,7 +66,6 @@ app.post('/login', (req, res, next) => {
       next(error);
     });
 });
-
 
 // Endpoint for user registration
 app.post('/register', (req, res, next) => {
@@ -124,7 +127,6 @@ app.post('/createForm', async (req, res, next) => {
   }
 });
 
-
 // Endpoint for getting forms
 app.get('/forms', (req, res, next) => {
   const userId = req.session.userId;
@@ -141,7 +143,7 @@ app.get('/forms', (req, res, next) => {
 
 // Serve the index.html file
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'Login Page', 'web-apps', 'cc-authorization', 'index.html'));
 });
 
 // Error handling middleware
@@ -151,6 +153,7 @@ app.use((err, req, res, next) => {
 });
 
 // Start the server
-app.listen(process.env.PORT || 5000, () => {
-  console.log('Server is running on http://localhost:5000');
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
