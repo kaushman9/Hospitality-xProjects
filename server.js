@@ -13,7 +13,7 @@ const generateSessionSecret = () => {
   return crypto.randomBytes(32).toString('hex');
 };
 
-const sessionSecret = process.env.SESSION_SECRET || generateSessionSecret();
+const sessionSecret = generateSessionSecret();
 // Log the session secret to the console
 console.log('Session Secret:', sessionSecret);
 
