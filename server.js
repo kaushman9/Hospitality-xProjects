@@ -4,12 +4,24 @@ const app = express();
 const path = require('path');
 const session = require('express-session');
 const pgp = require('pg-promise')();
+const bodyParser = require('body-parser');
+const crypto = require('crypto');
+
+
+// Generate session secret
+const generateSessionSecret = () => {
+  return crypto.randomBytes(32).toString('hex');
+};
+
+const sessionSecret = generateSessionSecret();
+// Log the session secret to the console
+console.log('Session Secret:', sessionSecret);
 
 // Middleware to serve static files
 app.use(express.static(path.join(__dirname, '.')));
 
 // Middleware to parse request body as JSON
-app.use(express.json());
+app.use(bodyParser.json());
 
 // Middleware for session management
 app.use(
