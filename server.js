@@ -38,7 +38,7 @@ app.use(cors());
 // Database configuration
 const dbConfig = {
   user: 'saas1',
-  host: 'saas1.postgres.database.azure.com',
+  host: 'cluster2.postgres.database.azure.com',
   database: 'postgres',
   password: 'Kaushal12530!',
   port: 5432,
