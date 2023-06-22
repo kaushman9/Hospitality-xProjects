@@ -5,7 +5,7 @@ const path = require('path');
 const session = require('express-session');
 const pgp = require('pg-promise')();
 const bodyParser = require('body-parser');
-const crypto = require('crypto');
+const crypto = require('crypto');   
 
 
 // Generate session secret
@@ -38,7 +38,7 @@ app.use(cors());
 // Database configuration
 const dbConfig = {
   user: 'saas1',
-  host: 'cluster2.postgres.database.azure.com',
+  host: 'saas1.postgres.database.azure.com',
   database: 'postgres',
   password: 'Kaushal12530!',
   port: 5432,

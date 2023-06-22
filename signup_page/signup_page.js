@@ -28,7 +28,7 @@ function register(firstName, lastName, email, password) {
     .then(data => {
       if (data.success) {
         // Redirect to the login page after successful registration
-        window.location.href = 'login_page/login_page.html';
+        window.location.href = '../web-apps/webapp_index.html';
       } else {
         // Show error message on registration failure
         alert(data.message);
