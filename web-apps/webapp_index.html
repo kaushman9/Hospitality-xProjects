@@ -28,13 +28,23 @@
 
     <section id="dashboard" class="tab">
       <h1>Dashboard</h1>
-      <button id="createBtn">Create +</button>
+      <div class="filter-buttons">
+        <button class="filter-button active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="sent">Sent</button>
+        <button class="filter-button" data-filter="opened">Opened</button>
+        <button class="filter-button" data-filter="confirmed">Confirmed</button>
+      </div>
+      <div class="create-button-container">
+        <button id="createBtn">Create +</button>
+      </div>
       <table id="formTable">
         <thead>
           <tr>
+            <th>ID</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Status</th>
+            <th>Date Created</th>
           </tr>
         </thead>
         <tbody>
@@ -61,13 +71,39 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <form id="customerForm">
-        <label for="fname">First Name</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last Name</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <!-- Add other fields as needed -->
-        <input type="submit" value="Submit">
+        <div class="form-row">
+          <label for="fname">First Name *</label>
+          <input type="text" id="fname" name="fname" required>
+        </div>
+        <div class="form-row">
+          <label for="lname">Last Name *</label>
+          <input type="text" id="lname" name="lname" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-row">
+          <label for="notes">Notes to Guest</label>
+          <textarea id="notes" name="notes"></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="submit-button">Send</button>
+        </div>
       </form>
+    </div>
+  </div>
+
+  <!-- The User Form Modal -->
+  <div id="userFormModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="userFormInfo"></div>
+      <div id="creditCardInfo"></div>
     </div>
   </div>
 
